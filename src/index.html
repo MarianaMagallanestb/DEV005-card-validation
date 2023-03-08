@@ -1,14 +1,42 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Tarjeta de crédito válida</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <header></header>
-    <main></main>
-    <footer></footer>
-    <script src="index.js" type="module"></script>
-  </body>
+
+<head>
+  <meta charset="utf-8">
+  <title>Validación de tarjeta de crédito</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <header>
+    <h1 id="logo">mY Shelter</h1>
+    <h2 id="title">Válidar Tarjeta de crédito</h2>
+    <h3 id="text">Válidar una tarjeta de crédito nunca habia sido tan sencillo, mY Shelter es la solución</h3>
+  </header>
+  <main>
+    <seccion class="tarjeta">
+      <form action="class_formulario" class="form" id="formulario">
+
+
+        <label id="label_1" for="numero">Número De Tarjeta</label>
+
+        <input type="text" name="numero de tarjeta" id="numerodetarjeta" placeholder="4438231558582693" maxlength="16">
+
+        <button type="reset" classs="validar" id="btnValidar">Válidar</button>
+        <span id="resultado"></span>
+        <span id="mascaraPantalla"></span>
+
+      </form>
+      <div>
+        <button type="reset" id="reiniciar" value="limpiar">Reiniciar</button>
+      </div>
+
+    </seccion>
+
+  </main>
+</body>
+<footer id="footer">mY Shelter by: Mariana Magallanes</footer>
+<script src="index.js" type="module"></script>
+
 </html>
